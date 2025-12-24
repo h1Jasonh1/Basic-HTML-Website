@@ -1,0 +1,325 @@
+:root {
+  /* Light mode defaults */
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #0000ff;
+}
+
+.dark-mode {
+  /* Dark mode overrides */
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --link-color: #4da6ff;
+}
+
+a {
+  color: var(--link-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+hr {
+    margin: 0rem 0rem 0rem 0rem;
+    border: 1px solid black;
+    padding: 0rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+b {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    margin: 4rem 0rem 8rem 0rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav-wrapper {
+    display: flex;
+    align-items: right;
+    gap: 0.5rem;
+}
+
+#img_name-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#nav-items-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#nav-items {
+    display: flex;
+    gap: 1rem;
+}
+
+#logo {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 24%;
+}
+
+#main_section-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#projects-left {
+    width: 50%;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#project-heading {
+    padding: 0rem 0rem 0rem 2rem;
+}
+
+#projects-item {
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+    padding: 1rem 0rem 0rem 2rem;
+}
+
+#container-project {
+    display: flex;
+    justify-content: left;
+    border-bottom: 2px solid black;
+}
+
+#work_experience-middle {
+    width: 100%;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-bottom: 6rem;
+}
+
+#work_experience {
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+#open_source {
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+#open_source-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 1rem 0rem 0rem 0rem;
+    padding-bottom: 24px;
+}
+
+#education-right {
+    width: 50%;
+    padding-left: 2rem;
+    border-bottom: 2px solid black;
+}
+
+#education_list {
+    margin: 0;
+    padding: 0;
+}
+
+#education-item {
+    padding: 0px 0px 0px 12px;
+}
+
+ul#education_list ::marker {
+    content: "-";
+    color: black;
+    text-indent: 1rem;
+}
+
+#reviews {
+    text-align: left;
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+#review_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+}
+
+.review_card {
+    border: 2px solid black;
+    border-radius: 24px;
+    padding: 1rem;
+    width: 18rem;
+}
+
+footer {
+    text-align: center;
+    padding: 6rem 0rem 2rem 2rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    header {
+        margin: 1rem 0rem 2rem 0rem;
+    }
+
+    p {
+        margin: 12px 0px 0px 0px;
+    }
+
+    footer {
+        padding: 1rem 0rem 1rem 0rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #projects-left {
+        width: 100%;
+        align-items: center;
+        border-right: none;
+    }
+
+    #container-project {
+        flex-direction: column;
+        align-items: center;
+        background-color: lightgray;
+    }
+
+    #projects-item {
+        padding: 12px 0px 12px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #container-project-last-item {
+        display: flex;
+        border-bottom: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: lightgray;
+    }
+
+    #project-heading {
+        padding: 12px 0px 12px 0px;
+        margin: 0rem 0rem 0rem 0rem;
+        display: flex;
+        border-bottom: none;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid black;
+    }
+
+    #work_experience-middle {
+        border-right: none;
+        border-bottom: none;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+
+    #work_experience {
+        padding: 0rem 0rem 0rem 0rem;
+    }
+
+    #work_experience-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-bottom: 2px solid black;
+        padding: 1rem 0rem 1rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    #work_experience-content {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+        padding: 1rem 0rem 0rem 1rem;
+        padding-bottom: 24px;
+        background-color: lightgray;
+    }
+
+    #open_source-heading {
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    #open_source {
+        padding: 0rem 0rem 0rem 0rem;
+        margin-bottom: 24px;
+    }
+
+    #open_source-content {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+        border-bottom: 2px solid black;
+        padding: 0rem 0rem 24px 1rem;
+        background-color: lightgray;
+    }
+
+    #education-right {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+        padding: 0rem 0rem 0rem 0rem;
+        border-bottom: 2px solid black;
+        width: auto;
+    }
+
+    #education-content {
+        padding: 16px 0rem 24px 1rem;
+    }
+
+    #education_list-heading {
+        padding-bottom: 8px;
+    }
+
+    #education-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    #review_header {
+        text-align: center;
+    }
+
+    #review_wrapper {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review_card {
+        width: auto;
+    }
+};

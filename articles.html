@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles-home.css">
 </head>
-<nav>
-    <img src="logo.png" alt="Logo" id="logo">
-    <p>Jason Chambers</p>
-    <ul id="nav-items">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+<nav id="nav-wrapper" class="container">
+    <div id="img_name-wrapper" class="container">
+        <img src="./img/penguin.jpg" alt="Logo" id="logo">
+        <p>Jason Chambers</p>
+    </div>
+    <div>
+        <button id="toggle-button">Toggle Dark Mode</button>
+    </div>
+    <div id="nav-items-wrapper">
+        <li id="nav-items"><a href="home.html">Home</a></li>
+        <span class="divider">/</span>
+        <li id="nav-items"><a href="projects.html">Projects</a></li>
+        <span class="divider">/</span>
+        <li id="nav-items"><a href="articles.html">Articles</a></li>
+        <span class="divider">/</span>
+        <li id="nav-items"><a href="contact.html">Contact</a></li>
+    </div>
 </nav>
-<body>
+<body class="light-mode">
     <p>Articles</p>
+    <script src="script.js" defer></script>
 </body>
 </html>

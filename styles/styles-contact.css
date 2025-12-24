@@ -1,0 +1,131 @@
+:root {
+  /* Light mode defaults */
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #0000ff;
+}
+
+.dark-mode {
+  /* Dark mode overrides */
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --link-color: #4da6ff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+a {
+  color: var(--link-color);
+}
+
+hr {
+    margin: 0rem 0rem 0rem 0rem;
+    border: 1px solid black;
+    padding: 0rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+b {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    margin: 4rem 0rem 8rem 0rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#nav-wrapper {
+    display: flex;
+    align-items: right;
+    gap: 0.5rem;
+}
+
+#img_name-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#nav-items-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#nav-items {
+    display: flex;
+    gap: 1rem;
+}
+
+#logo {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 24%;
+}
+
+
+#contact-card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 2rem 2rem 2rem 2rem;
+    }
+
+form {
+    align-items: left;
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        margin: 1rem 0rem 2rem 0rem;
+    }
+
+    footer {
+        padding: 1rem 0rem 1rem 0rem;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    main {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+};

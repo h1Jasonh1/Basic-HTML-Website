@@ -4,62 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic HTML Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles-home.css">
 </head>
-<nav>
-    <img src="logo.png" alt="Logo" id="logo">
-    <p>Jason Chambers</p>
-    <ul id="nav-items">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+<nav id="nav-wrapper" class="container">
+    <div id="img_name-wrapper" class="container">
+        <img src="./img/penguin.jpg" alt="Logo" id="logo">
+        <p>Jason Chambers</p>
+    </div>
+    <div>
+        <button id="toggle-button">Toggle Dark Mode</button>
+    </div>
+    <div id="nav-items-wrapper">
+        <li id="nav-items"><a href="home.html">Home</a></li>
+        <span class="divider">/</span>
+        <li id="nav-items"><a href="projects.html">Projects</a></li>
+        <span class="divider">/</span>
+        <li id="nav-items"><a href="articles.html">Articles</a></li>
+        <span class="divider">/</span>
+        <li id="nav-items"><a href="contact.html">Contact</a></li>
+    </div>
 </nav>
-<header>
+<header id="header">
     <h1>Frontend Developer</h1>
     <p>HTML only with proper layout, no styling</p> 
 </header>
-<body>
+<hr>
+<body class="light-mode">
     <main>
-        <section id="wrapper">
+        <section id="main_section-wrapper" class="container">
             <section id="projects-left">
-                <h3>Projects</h3>
-                <li>Portfolio Website</li>
-                <li>E-commerce Site</li>
-                <li>Calculator</li>
-                <li>Blog Platform</li>
-                <li>To-do List</li>
-            </section>
-            <section id="work_experience-middle">
-                <h3>Work Experience</h3>
-                <p>roadmap.sh</p>
-                <p>Solve all the frontend projects</p>
-                <p>Visit my Profile</p>
-                <div>
-                    <h3>OpenSource Work</h3>
-                    <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
-                    <p>Visit my GitHub Profile</p>
+                <h3 id="project-heading">Projects</h3>
+                <div id="container-project">
+                <li id="projects-item">Portfolio Website</li>
+                </div>
+                <div id="container-project">
+                <li id="projects-item">E-commerce Site</li>
+                </div>
+                <div id="container-project">
+                <li id="projects-item">Calculator</li>
+                </div>
+                <div id="container-project">
+                <li id="projects-item">Blog Platform</li>
+                </div>
+                <div id="container-project-last-item">
+                <li id="projects-item">To-do List</li>
                 </div>
             </section>
-            <section id="education-right">
-                <h3>Education</h3>
-                <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organised 30 sessions.</p>
-                <p>Courses I took</p>
-                <ul id="education_list">
-                    <li>Web Development</li>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Database Management Systems</li>
-                    <li>Web Development</li>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Database Management Systems</li>
-                    <li>Web Development</li>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Database Management Systems</li>
+            <section id="work_experience-middle">
+                <div id="work_experience">
+                    <h3 id="work_experience-heading">Work Experience</h3>
+                    <div id="work_experience-content">
+                        <b>roadmap.sh</b>
+                        <p>Solved all the frontend projects</p>
+                        <p><a href="https://roadmap.sh/u/jasondev">Visit my Profile</a></p>
+                    </div>
+                </div>
+                <hr>
+                <div id="open_source">
+                    <div id="open_source-content">
+                        <b id="open_source-heading">OpenSource Work</b>
+                        <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
+                        <p><a href="https://github.com/h1Jasonh1">Visit my GitHub Profile</a></p>
+                    </div>
+                </div>
+            </section>
+            <section id="education-right" class="container">
+                <h3 id="education-heading">Education</h3>
+                <div id="education-content">
+                    <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organised 30 sessions.</p>
+                    <div>
+                        <div id="education_list-heading">
+                            <p>Courses I took</p>
+                        </div>
+                        <ul id="education_list">
+                            <li id="education-item">Web Development</li>
+                            <li id="education-item">Data Structures and Algorithms</li>
+                            <li id="education-item">Database Management Systems</li>
+                            <li id="education-item">Web Development</li>
+                            <li id="education-item">Data Structures and Algorithms</li>
+                            <li id="education-item">Database Management Systems</li>
+                            <li id="education-item">Web Development</li>
+                            <li id="education-item">Data Structures and Algorithms</li>
+                            <li id="education-item">Database Management Systems</li>
+                    </div>
+                </div>
             </section>
         </section>
-        <section id="reviews">
-            <h3>Reviews from my teachers</h3>
-            <div id="review_wrapper">
+        <section id="reviews" class="container">
+            <h3 id="review_header">Reviews from my teachers</h3>
+            <div id="review_wrapper" class="container">
                 <div class="review_card">
                     <p>"An excellent student with a keen interest in frontend development."</p>
                     <p>Teacher A</p>
@@ -78,8 +114,9 @@
             </div>
         </section>
         <footer>
-            <p>© All rights reserved 2025</p>
+            <h3>© All rights reserved 2025</h3>
         </footer>
-    </main> 
+    </main>
+    <script src="script.js" defer></script> 
 </body>
 </html>
